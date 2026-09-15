@@ -24,6 +24,4 @@ MIT. Copyright applies to the text and code; it does not touch any separately re
 
 ---
 
-Copy from the top heading down to that last line. Then on the repo: open `README.md`, tap the **pencil** to edit, select-all and delete what's there, paste this in, and **Commit changes**.
 
-One note — the "Also in this repo" section lists the code and figures. If you only uploaded the consolidated file and not those, either upload them too, or just delete those bullet lines so the README doesn't point at files that aren't there. Want me to trim it to a document-only version instead?
