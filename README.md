@@ -12,11 +12,7 @@ This repository documents that incident and everything that followed: the repair
 
 - **[PSYCHIC-LEGO-CONSOLIDATED.md](PSYCHIC-LEGO-CONSOLIDATED.md)** — the complete case file: primer, glossary, a "relation to existing work" ledger, and all four parts. If you read one thing, read this.
 
-**## Also in this repo**
 
-- `PSYCHIC-LEGO-PART-4.md` — the second-brick search as a standalone document.
-- `psychic_lego_v2.py` — the complete zero-finding and analysis code. Standard Python with NumPy and mpmath; regenerates every number in the file in roughly two seconds.
-- `landau_spectrum.png`, `fold_and_spacings.png`, `spike_growth.png` — figures referenced in the text.
 
 **## Reproducibility**
 
