@@ -1,0 +1,387 @@
+{
+ "seed": 20260916,
+ "assignment": {
+  "primes": [
+   "transpose",
+   "fabricate",
+   "substitute"
+  ],
+  "catalan": [
+   "substitute",
+   "fabricate",
+   "transpose"
+  ],
+  "eigenvalues": [
+   "transpose",
+   "fabricate",
+   "agg_preserving"
+  ],
+  "ode": [
+   "fabricate",
+   "rounding",
+   "agg_preserving"
+  ],
+  "logistic": [
+   "fabricate",
+   "wrong_param",
+   "rounding"
+  ],
+  "statistics": [
+   "agg_preserving",
+   "fabricate",
+   "transpose"
+  ],
+  "optimization": [
+   "precision_perturbation",
+   "substitute",
+   "fabricate"
+  ],
+  "fourier": [
+   "fabricate",
+   "rounding",
+   "agg_preserving"
+  ],
+  "binomial": [
+   "transpose",
+   "rounding",
+   "agg_preserving"
+  ],
+  "integration": [
+   "transpose",
+   "agg_preserving",
+   "fabricate"
+  ]
+ },
+ "ledger": [
+  {
+   "domain": "primes",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "primes",
+   "corruption": "transpose",
+   "detail": "swap 160,161",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "primes",
+   "corruption": "fabricate",
+   "detail": "index 11",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "primes",
+   "corruption": "substitute",
+   "detail": "index 163 <- neighbor",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "catalan",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "catalan",
+   "corruption": "substitute",
+   "detail": "index 14 <- neighbor",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "catalan",
+   "corruption": "fabricate",
+   "detail": "index 14",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "catalan",
+   "corruption": "transpose",
+   "detail": "swap 3,4",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "eigenvalues",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "eigenvalues",
+   "corruption": "transpose",
+   "detail": "swap 2,3",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "eigenvalues",
+   "corruption": "fabricate",
+   "detail": "index 6",
+   "self_check": "FAIL",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "eigenvalues",
+   "corruption": "agg_preserving",
+   "detail": "+/-0.261 at 7,9",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "ode",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "ode",
+   "corruption": "fabricate",
+   "detail": "index 16",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "ode",
+   "corruption": "rounding",
+   "detail": "rounded to 4 decimals",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "ode",
+   "corruption": "agg_preserving",
+   "detail": "+/-0.0234 at 11,15",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "logistic",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "logistic",
+   "corruption": "fabricate",
+   "detail": "index 162",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "logistic",
+   "corruption": "wrong_param",
+   "detail": "r = 3.9 + 1e-9",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "logistic",
+   "corruption": "rounding",
+   "detail": "rounded to 4 decimals",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "statistics",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "statistics",
+   "corruption": "agg_preserving",
+   "detail": "+/-0.179 at 92,30",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "statistics",
+   "corruption": "fabricate",
+   "detail": "index 82",
+   "self_check": "FAIL",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "statistics",
+   "corruption": "transpose",
+   "detail": "swap 10,11",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "optimization",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "optimization",
+   "corruption": "precision_perturbation",
+   "detail": "+5e-3 at index 0",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "optimization",
+   "corruption": "substitute",
+   "detail": "index 1 <- neighbor",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "optimization",
+   "corruption": "fabricate",
+   "detail": "index 0",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "fourier",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "fourier",
+   "corruption": "fabricate",
+   "detail": "index 98",
+   "self_check": "FAIL",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "fourier",
+   "corruption": "rounding",
+   "detail": "rounded to 4 decimals",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "fourier",
+   "corruption": "agg_preserving",
+   "detail": "+/-1.25 at 127,84",
+   "self_check": "FAIL",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "binomial",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "binomial",
+   "corruption": "transpose",
+   "detail": "swap 12,13",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "binomial",
+   "corruption": "rounding",
+   "detail": "rounded to 4 decimals",
+   "self_check": "FAIL",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "binomial",
+   "corruption": "agg_preserving",
+   "detail": "+/-0.00653 at 9,16",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "integration",
+   "corruption": "NONE (control)",
+   "detail": "",
+   "self_check": "PASS",
+   "independent": "PASS",
+   "truth_state": "clean"
+  },
+  {
+   "domain": "integration",
+   "corruption": "transpose",
+   "detail": "swap 1,2",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "integration",
+   "corruption": "agg_preserving",
+   "detail": "+/-0.00612 at 12,18",
+   "self_check": "PASS",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  },
+  {
+   "domain": "integration",
+   "corruption": "fabricate",
+   "detail": "index 6",
+   "self_check": "FAIL",
+   "independent": "FAIL",
+   "truth_state": "corrupted"
+  }
+ ],
+ "metrics": {
+  "corrupted": 30,
+  "controls": 10,
+  "SER": 0.8,
+  "IDR": 0.9333333333333333,
+  "lego_events": 22,
+  "double_misses": 2,
+  "caught_by_both": 6,
+  "false_positives": 0
+ }
+}
